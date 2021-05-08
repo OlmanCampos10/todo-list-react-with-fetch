@@ -1,14 +1,15 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-import { List } from "./todoList.js";
+//import your own components
+import { Header } from "./header.js";
+import { Todo } from "./todoList.js";
 
 //create your first component
-export function Home() {
+export const Home = () => {
 	return (
-		<div>
-			<todoList />
+		<div className="text-center mx-auto mt-5 w-25 rounded border border-info">
+			<Header />
+			<Todo />
 		</div>
 	);
-}
+};
